@@ -16,13 +16,19 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um sistema de agendamento de salas presenciais para reuniões, garantindo uma solução eficiente, segura e de fácil usabilidade. O sistema permitirá que os usuários façam reservas em salas predefinidas, otimizando o uso dos espaços disponíveis na organização.
 
+Objetivos Específicos
+
+-Desenvolver um mecanismo de login para os usuários.
+Avaliar e aplicar práticas de segurança, como armazenamento seguro de senhas e proteção contra acessos indevidos.<br>
+Criar uma interface intuitiva para gerenciamento de reservas
+
+-Desenvolver um design responsivo e acessível para facilitar a experiência do usuário.
+Implementar funcionalidades que permitam visualizar, cadastrar e cancelar reservas de forma eficiente.<br>
+Avaliar a viabilidade de integração com calendários externos
 ## Justificativa
 
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
@@ -84,12 +90,16 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+| ID  | Restrição | Solução |
+|----|-------------------------------------------------------|--------------------------------------------------------------|
+| 01 | O projeto deverá ser entregue até o final do semestre | Utilizar metodologias ágeis (Scrum/Kanban) e priorizar MVP para garantir entregas iterativas. |
+| 02 | Não pode ser desenvolvido um módulo de backend | Utilizar serviços de terceiros como Firebase, Supabase ou AWS Amplify para gerenciar autenticação e banco de dados. |
+| 03 | A aplicação deve ser multiplataforma (web e mobile) | Utilizar frameworks como React (Next.js) para web e React Native ou Flutter para mobile. |
+| 04 | Deve utilizar serviços de terceiros para backend | Integrar APIs externas para funcionalidades como autenticação, armazenamento e notificações. |
+| 05 | A comunicação entre frontend e backend deve ser eficiente e confiável | Implementar GraphQL ou otimizar chamadas REST com cache e WebSockets para atualizações em tempo real. |
+| 06 | O gerenciamento de agendamentos deve respeitar as limitações das APIs utilizadas | Definir regras de negócios diretamente no frontend e utilizar funções serverless para operações críticas. |
+| 07 | Medidas de segurança devem ser adotadas para proteção dos dados dos usuários | Implementar autenticação segura (OAuth, Firebase Auth) e criptografia para armazenamento de dados sensíveis. |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
